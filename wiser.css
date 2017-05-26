@@ -24,7 +24,7 @@
   font-size: 26px;
 }
 .texto-pergunta{
-  margin-top: 50px;
+  margin-top: 35px;
   font-size: 32px;
   color: white;
 }
@@ -40,10 +40,22 @@
   width: 130%;
   float: right;
 }
+.bg-student {
+  background: url("img/tornar_wise/bg3.png");
+  background-size: 130% 310px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 310px;
+  width: 100%;
+  margin-top: 100px;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .bg-image {
     top: 92px;
+  }
+  .texto-pergunta{
+    margin-top: 50px;
   }
   .motivo1, .motivo2 {
   margin-bottom: -80px;
@@ -76,6 +88,9 @@
   .navbar .input-group button i {
     color: #e67e22;
     font-size: 22px;
+  }
+  .bg-student {
+    background-size: 100% 310px;
   }
  }
 
