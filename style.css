@@ -30,7 +30,6 @@ body {
 }
 
 .navbar-default {
-  z-index: 3;
   padding: 20px 50px;
   background-color: black;
   border-color: rgba(0, 0, 0, 0);
@@ -40,9 +39,13 @@ body {
   color: #bdc3c7;
 }
 
+.navbar-default .navbar-nav>li>a:visited, .navbar-default .navbar-nav .open .dropdown-menu>li>a:visited {
+  color: #bdc3c7;
+}
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover  {
   color: white;
-  background-color: #e67e22; 
+  background-color: #e67e22;
 }
 
 .premium-button a {
@@ -77,11 +80,54 @@ nav .logo img {
 .bg-image{
   height: 500px;
   overflow: hidden;
+  z-index: -10;
+  position: absolute;
+  top: 92px;
 }
 
 .bg-image img {
   min-height: 500px;
   width: 200%;
+}
+
+.hero-text {
+  text-align: center;
+  margin-top: 160px
+}
+
+.hero-text h2 {
+  color: #ecf0f1;
+}
+
+.hero-text p {
+  color: #bdc3c7;
+  font-size: 16px;
+}
+
+.hero-sub {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.input-group {
+  width: 80%;
+  margin: auto;
+}
+
+.input-group input {
+  height: 50px;
+  font-size: 16px;
+}
+
+.hero-text button {
+  height: 50px;
+}
+
+.hero-text button i {
+  color: #e67e22;
+  font-size: 22px;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -95,8 +141,13 @@ nav .logo img {
     background-color: rgba(0,0,0,0);
   }
   .bg-image {
-    position: absolute;
     top: 0;
+  }
+  .hero-sub {
+    width: 400px;
+  }
+  .input-group {
+    width: 380px;
   }
  }
 
