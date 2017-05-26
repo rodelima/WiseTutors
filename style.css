@@ -6,11 +6,19 @@ body {
   margin: 0;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
 /******************************
  HEADER
  ******************************/
 
 /****** NAVBAR ******/
+
+.header-height {
+  height: 592px;
+}
 
 .navbar {
   margin-bottom: 0;
@@ -37,10 +45,12 @@ body {
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav .open .dropdown-menu>li>a {
   color: #bdc3c7;
+  font-weight: 200;
 }
 
 .navbar-default .navbar-nav>li>a:visited, .navbar-default .navbar-nav .open .dropdown-menu>li>a:visited {
   color: #bdc3c7;
+  font-weight: 200;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover  {
@@ -77,6 +87,8 @@ nav .logo img {
   width: 180px;
 }
 
+/****** HERO HEADER ******/
+
 .bg-image{
   height: 500px;
   overflow: hidden;
@@ -111,6 +123,10 @@ nav .logo img {
   margin-top: 15px;
 }
 
+.hero-sub p {
+  font-weight: 100;
+}
+
 .input-group {
   width: 80%;
   margin: auto;
@@ -130,8 +146,77 @@ nav .logo img {
   font-size: 22px;
 }
 
+/******************************
+BODY
+ ******************************/
+
+/****** CATEGORIAS ******/
+
+.categorias h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.show-mobile select {
+  width: 100%;
+  height: 30px;
+}
+
+.show-desktop {
+  display: none;
+}
+
+/****** CURSOS ******/
+
+.cursos {
+  margin: auto;
+  margin-top: 40px;
+}
+
+.cursos h5 {
+  color: #32d6ce;
+  margin-bottom: 3px;
+}
+
+.cursos p {
+  font-size: 11px;
+  margin-bottom: -2px;
+}
+
+.curso {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+}
+
+.font-small {
+  font-size: 10px;
+  margin-right: 15px;
+}
+
+.font-small i {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.curso {
+  margin-bottom: 20px;
+}
+
+/*************************************************************************************/
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  /******************************
+   HEADER
+   ******************************/
+
+   /****** NAVBAR ******/
+
+  .header-height {
+    height: 500px;
+  }
   .bg-image img {
     width: 100%;
     height: auto;
@@ -140,6 +225,9 @@ nav .logo img {
   .navbar-default {
     background-color: rgba(0,0,0,0);
   }
+
+  /****** HERO HEADER ******/
+
   .bg-image {
     top: 0;
   }
@@ -149,9 +237,86 @@ nav .logo img {
   .input-group {
     width: 380px;
   }
+
+  /****** CATEGORIAS ******/
+
+  .show-mobile {
+    display: none;
+  }
+
+  .show-desktop {
+    display: block;
+  }
+
+  .principal {
+    width: 90%;
+    margin: auto;
+  }
+  .lista-categorias {
+    text-align: center;
+    padding: 0;
+    max-width: 880px;
+  }
+
+  .lista-categorias li {
+    display: inline-block;
+    padding: 5px 1% 0 1%;
+    margin-left: -4px;
+    border-bottom: solid #95a5a6 1px;
+    margin-bottom: 10px;
+  }
+
+  .lista-categorias li:hover {
+    border-color: red;
+  }
+
+  .lista-categorias .active {
+    border-color: red;
+  }
+  .lista-categorias .active>a {
+    color: red;
+    font-weight: 500;
+  }
+  .lista-categorias li>a {
+    color: #95a5a6;
+  }
+  .lista-categorias li:hover>a {
+    color: red;
+    text-decoration: none;
+  }
+  .lista-categorias li:checked>a, .lista-categorias li:active>a, .lista-categorias li:default >a {
+    text-decoration: none;
+  }
+  .lista-categorias {
+    width: 60%;
+    margin: auto;
+  }
+
+  /****** CURSOS ******/
+
  }
+
+ /*************************************************************************************/
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  /****** CATEGORIAS ******/
+
+  .principal{
+    width: 86%;
+  }
+  .lista-categorias {
+    width: 100%;
+  }
+}
+
+/*************************************************************************************/
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .principal{
+    width: 75%;
+  }
 
  }
