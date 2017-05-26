@@ -1,0 +1,106 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* RESET */
+body {
+  margin: 0;
+}
+
+/******************************
+ HEADER
+ ******************************/
+
+/****** NAVBAR ******/
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: rgba(0,0,0,0);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background-color: #e67e22;
+  color: white;
+}
+
+.navbar-default {
+  z-index: 3;
+  padding: 20px 50px;
+  background-color: black;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+  color: #bdc3c7;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover  {
+  color: white;
+  background-color: #e67e22; 
+}
+
+.premium-button a {
+  background-color: #2ecc71;
+  margin: 5px;
+  color: #ecf0f1 !important;
+}
+
+.premium-button a:hover {
+  background-color: #2ecc71 !important;
+  margin: 5px;
+  color: white !important;
+}
+
+.badge-icon {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 9px;
+  background-color: #e67e22;
+  padding: 3px 5px;
+}
+
+nav .logo img {
+  width: 180px;
+}
+
+.bg-image{
+  height: 500px;
+  overflow: hidden;
+}
+
+.bg-image img {
+  min-height: 500px;
+  width: 200%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .bg-image img {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+  }
+  .navbar-default {
+    background-color: rgba(0,0,0,0);
+  }
+  .bg-image {
+    position: absolute;
+    top: 0;
+  }
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+ }
