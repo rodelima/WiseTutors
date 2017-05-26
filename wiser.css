@@ -1,0 +1,83 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+.navbar .navbar-form {
+  display: none;
+}
+.header-height {
+  height: 392px;
+}
+.bg-image {
+  height: 300px;
+}
+.bg-image img {
+  min-height: 300px;
+}
+.hero-text {
+  margin-top: 120px;
+}
+.hero-text img {
+  width: 280px;
+}
+.texto-botao {
+  color: white;
+  margin-top: -45px;
+  font-size: 26px;
+}
+.texto-pergunta{
+  margin-top: 50px;
+  font-size: 32px;
+  color: white;
+}
+.motivo1, .motivo2 {
+  overflow: hidden;
+  margin-bottom: -20px;
+}
+.motivo1 img {
+  width: 140%;
+  margin-left: -10%;
+}
+.motivo2 img {
+  width: 130%;
+  float: right;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .bg-image {
+    top: 92px;
+  }
+  .motivo1, .motivo2 {
+  margin-bottom: -80px;
+  }
+  .motivo1 img {
+    width: 63%;
+    margin-left: -5%;
+  }
+  .motivo2 img {
+    width: 63%;
+  }
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar .navbar-form {
+    display: table;
+  }
+  .navbar .input-group .large {
+    width: 280px;
+  }
+  .navbar .input-group input {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .navbar .input-group button {
+    height: 40px;
+  }
+  .navbar .input-group button i {
+    color: #e67e22;
+    font-size: 22px;
+  }
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

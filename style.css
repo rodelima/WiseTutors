@@ -20,6 +20,10 @@ a:-webkit-any-link {
   height: 592px;
 }
 
+.logo h1 {
+  margin-top: 0;
+}
+
 .navbar {
   margin-bottom: 0;
 }
@@ -132,21 +136,21 @@ nav .logo img {
   font-weight: 100;
 }
 
-.input-group {
+.hero-text .input-group {
   width: 80%;
   margin: auto;
 }
 
-.input-group input {
+.hero-text .input-group input {
   height: 50px;
   font-size: 16px;
 }
 
-.hero-text button {
+.hero-text .input-group button {
   height: 50px;
 }
 
-.hero-text button i {
+.hero-text .input-group button i {
   color: #e67e22;
   font-size: 22px;
 }
@@ -181,6 +185,7 @@ BODY
 .cursos h5 {
   color: #32d6ce;
   margin-bottom: 3px;
+  font-weight: 600;
 }
 
 .cursos p {
@@ -205,7 +210,7 @@ BODY
 }
 
 .curso {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /*************************************************************************************/
@@ -231,6 +236,10 @@ BODY
     background-color: rgba(0,0,0,0);
   }
 
+  .bg-black {
+    background-color: black;
+  }
+
   /****** HERO HEADER ******/
 
   .bg-image {
@@ -239,7 +248,7 @@ BODY
   .hero-sub {
     width: 400px;
   }
-  .input-group {
+  .hero-text .input-group {
     width: 380px;
   }
 
@@ -265,10 +274,10 @@ BODY
 
   .lista-categorias li {
     display: inline-block;
-    padding: 5px 1% 0 1%;
+    padding: 5px 2% 0 2%;
     margin-left: -4px;
     border-bottom: solid #95a5a6 1px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .lista-categorias li:hover {
@@ -276,7 +285,7 @@ BODY
   }
 
   .lista-categorias .active {
-    border-color: red;
+    border-bottom: solid red 2px;
   }
   .lista-categorias .active>a {
     color: red;
@@ -293,7 +302,7 @@ BODY
     text-decoration: none;
   }
   .lista-categorias {
-    width: 60%;
+    width: 85%;
     margin: auto;
   }
 
@@ -313,6 +322,9 @@ BODY
   }
   .lista-categorias {
     width: 100%;
+  }
+  .lista-categorias li {
+    padding: 5px 1% 0 1%;
   }
 }
 
