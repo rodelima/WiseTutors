@@ -4,18 +4,18 @@
   display: none;
 }
 .header-height {
-  height: 392px;
+  height: 442px;
 }
 .bg-image {
-  height: 300px;
+  height: 350px;
 }
 .bg-image img {
-  min-height: 300px;
+  min-height: 350px;
 }
 .hero-text {
-  margin-top: 120px;
+  margin-top: 150px;
 }
-.hero-text img {
+.btn-upload img {
   width: 280px;
 }
 .texto-botao {
@@ -42,12 +42,37 @@
 }
 .bg-student {
   background: url("img/tornar_wise/bg3.png");
-  background-size: 130% 310px;
+  background-size: 130% 200px;
   background-position: center;
   background-repeat: no-repeat;
-  height: 310px;
+  min-height: 200px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 0;
+  text-align: center;
+}
+.bg-student h3 {
+  color: white;
+  padding-top: 40px;
+  font-size: 4.5vw;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  line-height: 6vw;
+  margin-bottom: 20px;
+}
+.features img {
+  max-width: 40%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.features h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+}
+.features p {
+  font-size: 18px;
+  font-weight: 200;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -66,6 +91,24 @@
   }
   .motivo2 img {
     width: 63%;
+  }
+  .bg-student {
+    background-size: 130% 350px;
+    height: 350px;
+    margin-top: 100px;
+  }
+  .bg-student h3 {
+    padding-top: 90px;
+    font-size: 4vw;
+    width: 80%;
+    line-height: 5vw;
+    margin-bottom: 60px;
+  }
+  .features {
+    padding: 40px;
+  }
+  .features .col-sm-4 {
+    padding: 0 2vw;
   }
  }
 
@@ -90,7 +133,16 @@
     font-size: 22px;
   }
   .bg-student {
-    background-size: 100% 310px;
+    background-size: 100% 350px;
+  }
+  .bg-student h3 {
+    padding-top: 100px;
+    font-size: 2.6vw;
+    width: 50%;
+    line-height: 3vw;
+  }
+  .features .col-sm-4 {
+    padding: 0 4vw;
   }
  }
 
