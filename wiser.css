@@ -6,9 +6,7 @@
  ******************************/
 
  /****** NAVBAR ******/
-.navbar .navbar-form {
-  display: none;
-}
+
 
 /****** HERO HEADER ******/
 .header-height {
@@ -244,16 +242,6 @@ BODY
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .navbar .navbar-form {
-    display: table;
-  }
-  .navbar .input-group .large {
-    width: 280px;
-  }
-  .navbar .input-group input {
-    height: 40px;
-    font-size: 14px;
-  }
   .motivo1 p {
     width: 19%;
     font-size: 1.5vw;
@@ -271,14 +259,6 @@ BODY
     top: 9vw;
     font-size: 1.5vw;
     left: 40px;
-  }
-
-  .navbar .input-group button {
-    height: 40px;
-  }
-  .navbar .input-group button i {
-    color: #e67e22;
-    font-size: 22px;
   }
   .bg-student {
     background-size: 100% 350px;

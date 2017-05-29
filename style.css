@@ -108,7 +108,7 @@ nav .logo img {
 
 .bg-image img {
   min-height: 500px;
-  width: 200%;
+  width: 250%;
 }
 
 .hero-text {
@@ -228,7 +228,7 @@ BODY
     height: 500px;
   }
   .bg-image img {
-    width: 100%;
+    width: 120%;
     height: auto;
     min-height: 500px;
   }
@@ -316,7 +316,6 @@ BODY
 @media (min-width: 992px) {
 
   /****** CATEGORIAS ******/
-
   .principal{
     width: 86%;
   }
@@ -332,6 +331,10 @@ BODY
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+  .bg-image img {
+    width: 100%;
+  }
   .principal{
     width: 75%;
   }
