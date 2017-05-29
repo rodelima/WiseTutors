@@ -15,7 +15,7 @@ label {
 
 .upload-form input, .upload-form textarea, .upload-form select {
   width: 100%;
-  border: solid orange 3px;
+  border: solid orange 2px;
   font-size: 16px;
   padding: 5px;
 }
@@ -28,13 +28,64 @@ label {
   color: #acacac;
 }
 
+.btn-upload, .btn-enviar {
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-top: 15px;
+}
+.btn-upload img, .btn-upload, .btn-enviar, .btn-enviar img {
+  width: 260px;
+  margin: auto;
+}
+.texto-botao {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: -15px;
+  left: 75px;
+}
+.texto-botao-enviar {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: -15px;
+  left: 100px;
+}
+.btn-enviar {
+  margin-top: 20px;
+}
+.only-desktop {
+  display: none;
+}
+.h-line {
+  border-top: solid orange 1px;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  .btn-upload img, .btn-upload {
+    width: 200px;
+    margin: auto;
+  }
+  .btn-upload {
+    display: inline-block;
+    margin-top: 0;
+  }
+  .btn-upload {
+    float: right;
+    margin-right: 100px;
+  }
+  .texto-botao {
+    left: 55px;
+    font-size: 18px;
+  }
   .upload-form {
     margin: auto;
-    border: solid 3px orange;
+    border: solid 2px orange;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 60px;
+    width: 700px;
   }
   label {
     display: inline-block;
@@ -49,16 +100,28 @@ label {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .only-mobile {
+    display: none;
+  }
+  .only-desktop {
+    display: inline-block;
+  }
+  .video-upload label {
+  width: auto;
+  }
+  .video-upload {
+    padding: 50px 30px !important;
+  }
   .upload-form input, .upload-form textarea, .upload-form select {
     width: 55%;
+  }
+  .upload-form {
+    width: 800px;
   }
  }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-      .upload-form {
-        width: 70%;
-      }
       .upload-form input, .upload-form textarea, .upload-form select {
         width: 50%;
       }
