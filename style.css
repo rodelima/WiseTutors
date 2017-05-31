@@ -9,6 +9,23 @@ body {
 a:-webkit-any-link {
   text-decoration: none;
 }
+a:focus {
+  outline: none;
+}
+
+/* GENERAL */
+
+.inline {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-top {
+  vertical-align: top;
+}
 
 /******************************
  HEADER
