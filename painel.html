@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Painel | Wise Tutors</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="black-header.css">
+    <link rel="stylesheet" href="painel.css">
+  </head>
+  <body>
+    <header>
+
+      <nav class="navbar navbar-default navbar-fixed-side-left bg-black">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="logo" href="index.html">
+              <h1><img src="img/logo/logo-transparente.png" alt="WiseTutors"></h1>
+            </a>
+          </div>
+          <form class="navbar-form navbar-left">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </span>
+              <input type="text" class="form-control large" placeholder="Busque por tema, professor ou curso">
+            </div><!-- /input-group -->
+          </form>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="wiser.html">Enviar curso</a></li>
+              <li><a href="#">
+                <i class="fa fa-bell-o badge-icon" aria-hidden="true"></i><span class="badge">5</span>
+              </a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rodrigo <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="painel.html">Meus Cursos</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Cursos inscritos</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Configurações</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="premium-button"><a href="#">Assinar Premium</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Sair</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    <div class="container">
+      <section>
+        <div class="row" id="tabs">
+          <div class="col-sm-3">
+            <div class="text-center">
+              <div class="nome">Rodrigo Lima</div>
+              <div class="inline seguindo">
+                <h3>15</h3>
+                <div>Seguindo</div>
+              </div>
+              <div class="inline seguidores">
+                <h3>16</h3>
+                <div>Seguidores</div>
+              </div>
+            </div>
+            <div class="menu-lateral">
+              <ul>
+                <li><a href="#tabs-1">Perfil</a></li>
+                <li><a href="#tabs-2">Portifólio</a></li>
+                <li><a href="#tabs-3">Cursos em andamento</a></li>
+                <li><a href="#tabs-4">Meus Cursos</a></li>
+                <li><a href="#tabs-5">Recomendados</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-9 conteudo-admin">
+            <div id="tabs-1">
+              <form action="#">
+                <div class="box-formulario">
+                  <label for="nome-aluno">Nome</label>
+                  <input type="text" id="nome-aluno" placeholder="Rodrigo Lima">
+                </div>
+                <div class="box-formulario">
+                  <label for="foto-aluno">Foto</label>
+                </div>
+                <div class="box-formulario">
+                  <label for="senha-aluno">Senha</label>
+                  <input type="password" id="senha-aluno" placeholder="*******">
+                </div>
+                <div class="box-formulario">
+                  <label for="biografia-aluno" class="align-top">Biografia</label>
+                  <textarea id="biografia-aluno" name="descricao" rows="8" placeholder="Deixe as pessoas conhecerem você"></textarea>
+                </div>
+                <div class="box-formulario">
+                  <label for="email-aluno">Email</label>
+                  <input type="text" id="email-aluno" placeholder="exemplo@exemplo.com">
+                </div>
+                <div class="box-formulario">
+                  <label for="telefone-aluno">Telefone</label>
+                  <input type="text" id="telefone-aluno" placeholder="55 00/9999-9999">
+                </div>
+                <div class="box-formulario">
+                  <label for="endereco-aluno">Endereço</label>
+                  <input type="text" id="endereco-aluno" placeholder="Do que você gosta?">
+                </div>
+                <div class="box-formulario">
+                  <label for="curriculo-aluno">Currículo</label>
+                  <input type="text" id="curriculo-aluno" placeholder="Fale sobre suas experiências">
+                </div>
+              </form>
+            </div>
+            <div id="tabs-2">
+              <div class="col-sm-4">
+                <a href="#">
+                  <div class="curso-portfolio">
+                    <img src="img/fake/fontes-retro.jpg" alt="fontes-retro">
+                    <div class="icons">
+                      <i class="fa fa-heart" aria-hidden="true"></i> 15 <i class="fa fa-comment" aria-hidden="true"></i> 1
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4"></div>
+            </div>
+            <div id="tabs-3" class="cursos">
+              <div class="curso col-sm-4">
+                <a href="#"><img src="img/fake/fontes-retro.jpg" alt="fontes-retro"></a>
+                <div>
+                  <a href="#"><h5>Criando fontes estilo Retro</h5></a>
+                  <p>João Ferreira</p>
+                  <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+                  <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+                </div>
+              </div>
+              <div class="col-sm-8 bar">
+                <div id="myBar-1" class="text-center">10%</div>
+                <div class="progress-bar">
+                  <div id="myProgress-1" class="text-center"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer style="height: 60px;"></footer>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#tabs" ).tabs();
+    } );
+
+    function move() {
+      var elem = document.getElementById("myBar-1");
+      var width = 10;
+      var id = setInterval(frame, 10);
+      function frame() {
+          if (width >= 100) {
+              clearInterval(id);
+          } else {
+              width++;
+              elem.style.width = width + '%';
+              elem.innerHTML = width * 1 + '%';
+          }
+      }
+    }
+    </script>
+
+  </body>
+</html>
