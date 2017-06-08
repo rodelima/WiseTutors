@@ -155,14 +155,17 @@
   background-color: #ebebeb;
   padding: 20px;
 }
-
+.meu-curso {
+  padding-bottom: 30px;
+  border-bottom: solid 1px orange;
+}
 .upload-button {
   width: 80%;
   padding: 10px;
   color: white;
   margin: auto;
   text-align: center;
-  background-color: green;
+  background-color: #32d6ce;
 }
 .button-editar {
   margin: 10px;
@@ -174,7 +177,7 @@
   padding: 5px;
 }
 .texto-top {
-  margin-top: 40px;
+  margin-top: 10px;
   font-size: 16px;
 }
 .comissao {
@@ -193,6 +196,20 @@
   padding: 10px;
   border-radius: 5px;
   text-transform: uppercase;
+}
+.notificar-button {
+  width: 80%;
+  padding: 5px;
+  background-color: #32d6ce;
+  color: white;
+  font-size: 22px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.recomendados img {
+  width: 200px;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -243,6 +260,9 @@
  }
  .cursos img, .cursos h5 {
    width: 200px;
+ }
+ .texto-top {
+   margin-top: 40px;
  }
 }
 
