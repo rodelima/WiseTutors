@@ -198,7 +198,7 @@
   text-transform: uppercase;
 }
 .notificar-button {
-  width: 80%;
+  width: 70%;
   padding: 5px;
   background-color: #32d6ce;
   color: white;
@@ -211,6 +211,20 @@
 .recomendados img {
   width: 200px;
 }
+
+.meus-cursos img, .recomendados img {
+  margin-bottom: 5px;
+}
+
+.meus-cursos h5, .meus-cursos p, .recomendados h5, .recomendados p {
+  margin: 0;
+}
+
+.meus-cursos h5, .recomendados h5 {
+  color: #32d6ce;
+  font-weight: 600;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .conteudo-admin {
