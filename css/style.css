@@ -1,0 +1,381 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* RESET */
+body {
+  margin: 0;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+
+/* GENERAL */
+
+.inline {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+/******************************
+ HEADER
+ ******************************/
+
+/****** NAVBAR ******/
+
+.header-height {
+  height: 592px;
+}
+
+.logo h1 {
+  margin-top: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: rgba(0,0,0,0);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+}
+
+.navbar-default {
+  padding: 20px 50px;
+  background-color: black;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+  color: #bdc3c7;
+  font-weight: 200;
+}
+
+.navbar-default .navbar-nav>li>a:visited, .navbar-default .navbar-nav .open .dropdown-menu>li>a:visited {
+  color: #bdc3c7;
+  font-weight: 200;
+}
+
+.navbar-default .navbar-nav>li>a:hover  {
+  color: white;
+  background-color: rgba(0,0,0,0);
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  color: white;
+  background-color: #e67e22;
+}
+
+.premium-button a {
+  background-color: #2ecc71;
+  margin: 5px;
+  color: #ecf0f1 !important;
+}
+
+.premium-button a:hover {
+  background-color: #2ecc71 !important;
+  margin: 5px;
+  color: white !important;
+}
+
+.badge-icon {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 9px;
+  background-color: #e67e22;
+  padding: 3px 5px;
+}
+
+nav .logo img {
+  width: 180px;
+}
+
+/****** HERO HEADER ******/
+
+.bg-image{
+  height: 500px;
+  overflow: hidden;
+  z-index: -10;
+  position: absolute;
+  top: 92px;
+}
+
+.bg-image img {
+  min-height: 500px;
+  width: 250%;
+}
+
+.hero-text {
+  text-align: center;
+  margin-top: 160px
+}
+
+.hero-text h2 {
+  color: #ecf0f1;
+}
+
+.hero-text p {
+  color: #bdc3c7;
+  font-size: 16px;
+}
+
+.hero-sub {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.hero-sub p {
+  font-weight: 100;
+}
+
+.hero-text .input-group {
+  width: 80%;
+  margin: auto;
+}
+
+.hero-text .input-group input {
+  height: 50px;
+  font-size: 16px;
+}
+
+.hero-text .input-group button {
+  height: 50px;
+}
+
+.hero-text .input-group button i {
+  color: #e67e22;
+  font-size: 22px;
+}
+
+/******************************
+BODY
+ ******************************/
+
+/****** CATEGORIAS ******/
+
+.categorias h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.show-mobile select {
+  width: 100%;
+  height: 30px;
+}
+
+.show-desktop {
+  display: none;
+}
+
+/****** CURSOS ******/
+
+.cursos {
+  margin: auto;
+  margin-top: 40px;
+}
+
+.cursos h5 {
+  color: #32d6ce;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.cursos p {
+  font-size: 11px;
+  margin-bottom: -2px;
+}
+
+.curso {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+}
+
+.cursos img, .cursos h5 {
+  width: 100%;
+}
+
+.curso {
+  margin-bottom: 20px;
+}
+
+.font-small {
+  font-size: 10px;
+  margin-right: 15px;
+}
+
+.font-small i {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+/******************************
+MODAL
+ ******************************/
+
+ /****** TOPO ******/
+
+.modal-body h2 {
+  font-size:18px;
+  color: red;
+}
+
+/*************************************************************************************/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  /******************************
+   HEADER
+   ******************************/
+
+   /****** NAVBAR ******/
+
+  .header-height {
+    height: 500px;
+  }
+  .bg-image img {
+    width: 120%;
+    height: auto;
+    min-height: 500px;
+  }
+  .navbar-default {
+    background-color: rgba(0,0,0,0);
+  }
+
+  .bg-black {
+    background-color: black;
+  }
+
+  /****** HERO HEADER ******/
+
+  .bg-image {
+    top: 0;
+  }
+  .hero-sub {
+    width: 400px;
+  }
+  .hero-text .input-group {
+    width: 380px;
+  }
+
+  /****** CATEGORIAS ******/
+
+  .show-mobile {
+    display: none;
+  }
+
+  .show-desktop {
+    display: block;
+  }
+
+  .principal {
+    width: 90%;
+    margin: auto;
+  }
+  .lista-categorias {
+    text-align: center;
+    padding: 0;
+    max-width: 880px;
+  }
+
+  .lista-categorias li {
+    display: inline-block;
+    padding: 5px 1% 0 1%;
+    margin-left: -4px;
+    border-bottom: solid #95a5a6 1px;
+    margin-bottom: 5px;
+  }
+
+  .lista-categorias li:hover {
+    border-bottom: solid red 2px;
+  }
+
+  .lista-categorias .ui-state-active {
+    border-bottom: solid red 2px;
+  }
+  .lista-categorias .ui-state-active>a {
+    color: red;
+    font-weight: 500;
+  }
+  .lista-categorias li>a {
+    color: #95a5a6;
+  }
+  .lista-categorias li:hover>a {
+    color: red;
+    text-decoration: none;
+  }
+  .lista-categorias li:checked>a, .lista-categorias li:active>a, .lista-categorias li:default >a {
+    text-decoration: none;
+  }
+  .lista-categorias {
+    width: 85%;
+    margin: auto;
+  }
+
+  /****** CURSOS ******/
+  .cursos img, .cursos h5 {
+    width: 200px;
+  }
+
+  .curso {
+    height: 230px;
+    margin-bottom: 0;
+  }
+ }
+
+ /*************************************************************************************/
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  /****** CATEGORIAS ******/
+  .principal{
+    width: 86%;
+  }
+  .lista-categorias {
+    width: 100%;
+  }
+  .lista-categorias li {
+    padding: 5px 1% 0 1%;
+  }
+}
+
+/*************************************************************************************/
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .bg-image img {
+    width: 100%;
+  }
+  .principal{
+    width: 75%;
+  }
+
+ }
