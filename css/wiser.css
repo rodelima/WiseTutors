@@ -81,7 +81,7 @@ BODY
 /****** ESTUDANTE BACKGROUND ******/
 
 .bg-student {
-  background: url("img/tornar_wise/bg3.png");
+  background: url("../img/tornar_wise/bg3.png");
   background-size: 130% 200px;
   background-position: center;
   background-repeat: no-repeat;

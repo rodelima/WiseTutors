@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -165,16 +166,29 @@
       <div class="modal-content">
         <div class="modal-body">
           <h2>Criando fontes estilo Retro</h2>
-          <img src="img/fake/fontes-retro.jpg" alt="fontes-retro">
-          <span>João Ferreira</span>
-          <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
-          <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
-          <div class="unidade">
-            <span class="titulo">Unidade 1</span>
-            <div class="aulas">
-              <span class="aula">1 - Introdução - 2:50</span>
+          <div class="row">
+            <div class="col-sm-8">
+              <img src="img/fake/fontes-retro.jpg" alt="fontes-retro" class="video-img">
+              <div class="info">
+                <span>João Ferreira</span>
+                <div class="estatisticas">
+                  <i class="fa fa-eye" aria-hidden="true"></i> 432
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="unidade">
+                <span class="titulo"><b>Unidade 1</b></span>
+                <div class="aulas">
+                  <div class="aula"><i class="fa fa-check checked" aria-hidden="true"></i>1 - Introdução - 2:50</div>
+                  <div class="aula">2 - Sobre Logos - 6:50</div>
+                </div>
+              </div>
             </div>
           </div>
+
+
           <div id="guias">
             <ul class="lista-categorias">
               <li><a href="#guia-comentarios">Comentários</a></li>
@@ -182,8 +196,42 @@
               <li><a href="#">Trabalhos</a></li>
               <li><a href="#">Compartilhar</a></li>
             </ul>
-            <div id="guia-comentarios">Teste</div>
-            <div id="guia-sobre">Teste2</div>
+            <div id="guia-comentarios" class="row">
+              <div class="col-sm-8">
+                <div class="comentario">
+                  <div class="usuario">
+                    Paulo Ricardo
+                  </div>
+                  <div class="texto">
+                    Muito Bacana o curso. O professor tem ótima didática
+                  </div>
+                </div>
+                <div class="comentario">
+                  <div class="usuario">
+                    Pedro
+                  </div>
+                  <div class="texto">
+                    Comentar
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="guia-sobre" class="row">
+              <div class="col-sm-8">
+                <div class="topico">
+                  <b>Descrição:</b> Neste curso vou lhe ensinar a criar letras...
+                </div>
+                <div class="topico">
+                  <b>Para quem é voltado este curso:</b> O curso é voltado para pessoas que já possue experiência com...
+                </div>
+                <div class="topico">
+                  <b>Nivel:</b> Intermediário
+                </div>
+                <div class="topico">
+                  <b>Possui certificado:</b> Sim
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

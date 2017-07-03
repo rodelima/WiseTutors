@@ -4,6 +4,7 @@
 /* RESET */
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a:-webkit-any-link {
@@ -245,6 +246,63 @@ MODAL
   color: red;
 }
 
+.modal-body .estatisticas {
+  display: inline-block;
+  float: right;
+}
+
+.modal-body .estatisticas i {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.modal-body .unidade {
+  margin-top: 30px;
+}
+
+.modal-body .info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-dialog .video-img {
+  width: 100%;
+}
+
+.modal-dialog .usuario {
+  margin-bottom: 10px;
+}
+
+.modal-dialog .comentario {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.modal-dialog .comentario .texto {
+  padding: 5px;
+  border: solid 2px rgba(170, 170, 170, 0.4);
+}
+
+#guias .lista-categorias {
+  margin-bottom: 15px;
+}
+
+.aula {
+  position: relative;
+}
+
+.checked {
+  position: absolute;
+  left: -20px;
+  color: #32d6ce;
+  display: inline-block;
+}
+
+#guia-sobre .topico {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /*************************************************************************************/
 
 /* Small devices (tablets, 768px and up) */
@@ -321,7 +379,7 @@ MODAL
   }
   .lista-categorias .ui-state-active>a {
     color: red;
-    font-weight: 500;
+    font-weight: 600;
   }
   .lista-categorias li>a {
     color: #95a5a6;
@@ -347,6 +405,21 @@ MODAL
     height: 230px;
     margin-bottom: 0;
   }
+
+  /****** MODAL ******/
+
+  .modal-dialog {
+    width: 750px;
+  }
+  .modal-dialog .video-img {
+    width: 460px;
+  }
+
+  #guias .lista-categorias {
+    text-align: left;
+    font-size: 16px;
+  }
+
  }
 
  /*************************************************************************************/
