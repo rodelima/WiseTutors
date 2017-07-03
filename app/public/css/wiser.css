@@ -1,0 +1,288 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/******************************
+ HEADER
+ ******************************/
+
+ /****** NAVBAR ******/
+
+
+/****** HERO HEADER ******/
+.header-height {
+  height: 442px;
+}
+.bg-image {
+  height: 350px;
+}
+.bg-image img {
+  min-height: 350px;
+}
+.hero-text {
+  margin-top: 150px;
+}
+.btn-upload img {
+  width: 280px;
+}
+.texto-botao {
+  color: white;
+  margin-top: -45px;
+  font-size: 26px;
+}
+.texto-pergunta{
+  margin-top: 35px;
+  font-size: 32px;
+  color: white;
+}
+
+/******************************
+BODY
+ ******************************/
+
+/****** MOTIVOS ******/
+
+.motivo1, .motivo2, .motivo3 {
+  overflow: hidden;
+  margin-bottom: -20px;
+  position: relative;
+}
+.motivo1 img, .motivo3 img {
+  width: 140%;
+  margin-left: -10%;
+}
+.motivo2 img {
+  width: 130%;
+  float: right;
+}
+.motivo1 p, .motivo3 p {
+  color: white;
+  position: absolute;
+  margin-left: 20px;
+  font-size: 4vw;
+}
+.motivo2 p {
+  position: absolute;
+  width: 60%;
+  top: 20vw;
+  right: 10px;
+  font-size: 4vw;
+  color: white;
+}
+.motivo1 p {
+  top: 18vw;
+  width: 60%;
+}
+
+.motivo3 p {
+    top: 17vw;
+    width: 70%;
+}
+
+/****** ESTUDANTE BACKGROUND ******/
+
+.bg-student {
+  background: url("../img/tornar_wise/bg3.png");
+  background-size: 130% 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  width: 100%;
+  margin-top: 0;
+  text-align: center;
+}
+.bg-student h3 {
+  color: white;
+  padding-top: 40px;
+  font-size: 4.5vw;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  line-height: 6vw;
+  margin-bottom: 20px;
+}
+
+/****** FEATURES ******/
+
+.features {
+  margin-bottom: 30px;
+}
+.features img {
+  max-width: 40%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.features h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+}
+.features p {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/****** DEPOIMENTO ******/
+
+.bg-red {
+  background-color: red;
+  height: 350px;
+}
+.depoimento, .assinatura {
+  width: 90%;
+  color: #ecf0f1;
+  font-size: 18px;
+  margin: auto;
+  font-weight: 200;
+}
+.depoimento {
+  text-align: center;
+  padding-top: 60px;
+}
+.assinatura {
+  text-align: right;
+  margin-top: 30px;
+}
+.call-to-action {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  /******************************
+   HEADER
+   ******************************/
+
+   /****** HERO HEADER ******/
+  .bg-image {
+    top: 92px;
+  }
+  .texto-pergunta{
+    margin-top: 50px;
+  }
+
+  /******************************
+  BODY
+   ******************************/
+
+  /****** MOTIVOS ******/
+
+  .motivo1, .motivo2, .motivo3 {
+  margin-bottom: -10vw;
+  }
+  .motivo1 img, .motivo3 img {
+    width: 63%;
+    margin-left: -5%;
+  }
+  .motivo2 img {
+    width: 63%;
+  }
+  .motivo1 p {
+    width: 25%;
+    font-size: 2vw;
+    top: 8vw;
+  }
+  .motivo2 p {
+    width: 30%;
+    font-size: 2vw;
+    top: 10vw;
+  }
+  .motivo3 p {
+    width: 30%;
+    top: 6vw;
+    font-size: 2vw;
+  }
+  /****** ESTUDANTE BACKGROUND ******/
+
+  .bg-student {
+    background-size: 130% 350px;
+    height: 350px;
+    margin-top: 100px;
+  }
+  .bg-student h3 {
+    padding-top: 90px;
+    font-size: 4vw;
+    width: 80%;
+    line-height: 5vw;
+    margin-bottom: 60px;
+  }
+
+  /****** FEATURES ******/
+
+  .features {
+    padding-top: 30px;
+  }
+  .features .col-sm-4 {
+    padding: 0 2vw;
+  }
+
+  /****** DEPOIMENTO ******/
+
+  .depoimento, .assinatura {
+    width: 80%;
+  }
+  .depoimento {
+    padding-top: 80px;
+  }
+
+  /****** DÚVIDAS ******/
+
+  .duvidas {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .duvidas p {
+    font-weight: 600;
+    margin: 30px 0 30px 5px;
+    font-size: 16px;
+  }
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .motivo1 p {
+    width: 19%;
+    font-size: 1.5vw;
+    top: 9vw;
+    left: 70px;
+  }
+  .motivo2 p {
+    width: 25%;
+    font-size: 1.5vw;
+    top: 12vw;
+    right: 80px;
+  }
+  .motivo3 p {
+    width: 25%;
+    top: 9vw;
+    font-size: 1.5vw;
+    left: 40px;
+  }
+  .bg-student {
+    background-size: 100% 350px;
+  }
+  .bg-student h3 {
+    padding-top: 100px;
+    font-size: 2.6vw;
+    width: 50%;
+    line-height: 3vw;
+  }
+  .features {
+    padding: 30px 70px;
+  }
+  .features .col-sm-4 {
+    padding: 0 4vw;
+  }
+  .depoimento {
+    padding-top: 100px;
+  }
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .depoimento, .assinatura {
+    width: 55%;
+  }
+ }

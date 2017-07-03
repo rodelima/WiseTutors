@@ -1,0 +1,284 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.nome {
+  font-size: 26px;
+  margin-top: 250px;
+  color: gray;
+  font-weight: 300;
+}
+
+.seguindo, .seguidores {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 18px;
+}
+
+.menu-lateral {
+  margin-top: 60px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #e67e22;
+}
+
+.menu-lateral ul {
+  list-style-type: none;
+}
+
+.menu-lateral a {
+  color: gray;
+  font-size: 18px;
+}
+
+.menu-lateral li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.menu-lateral .ui-state-active >a {
+  color: #e67e22;
+}
+
+.menu-lateral .ui-state-active >a:focus, .menu-lateral li {
+  outline: none;
+}
+
+.conteudo-admin {
+  margin-top: 70px;
+  padding-left: 30px;
+}
+
+.conteudo-admin label {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: right;
+  width: 100px;
+  color: gray;
+}
+
+.conteudo-admin input, .conteudo-admin textarea {
+  margin-left: 15px;
+  border: solid #ebebeb 2px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.conteudo-admin input {
+  width: 270px;
+  height: 32px;
+}
+
+.conteudo-admin textarea {
+  width: 90%;
+}
+
+.box-formulario {
+  margin-bottom: 25px;
+}
+
+.curso-portfolio img, .curso-portfolio .icons {
+  width: 250px;
+}
+
+.curso-portfolio img {
+  box-sizing: border-box;
+  border: solid 2px #e67e22;
+}
+
+.curso-portfolio .icons {
+  text-align: right;
+  color: #e67e22;
+  padding: 5px 10px;
+}
+
+.curso-portfolio .icons i {
+  font-size: 22px;
+}
+
+.curso {
+  height:inherit;
+}
+
+#myProgress-1 {
+    width: 27%;
+    height: 15px;
+    background-color: #32d6ce;
+    border-radius: 3px;
+}
+
+#myProgress-2 {
+    width: 100%;
+    height: 15px;
+    background-color: #32d6ce;
+    border-radius: 3px;
+}
+
+#myBar-1 {
+  margin-bottom: 15px;
+}
+
+
+.curso {
+  border-bottom: solid 1px orange;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.progress-bar {
+  background-color: #bdc3c7;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.bar {
+  width: 100%;
+  font-size: 18px;
+  color: gray;
+  margin-top: 25px;
+}
+
+.certificado img {
+  width: 70px !important;
+  margin-top: 40px;
+  display: none;
+}
+
+.certificado .ativo {
+  display: inline-block;
+}
+
+.enviar-curso {
+  border-bottom: solid 1px orange;
+  padding: 10px;
+}
+
+.upload-area {
+  background-color: #ebebeb;
+  padding: 20px;
+}
+.meu-curso {
+  padding-bottom: 30px;
+  border-bottom: solid 1px orange;
+}
+.upload-button {
+  width: 80%;
+  padding: 10px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  background-color: #32d6ce;
+}
+.button-editar {
+  margin: 10px;
+  background-color: orange;
+  width: 50px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+.texto-top {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.comissao {
+  font-size: 32px;
+  color: #32d6ce;
+  font-weight: 600;
+}
+.sacar-button {
+  background-color: #32d6ce;
+  color: white;
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.notificar-button {
+  width: 70%;
+  padding: 5px;
+  background-color: #32d6ce;
+  color: white;
+  font-size: 22px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.recomendados img {
+  width: 200px;
+}
+
+.meus-cursos img, .recomendados img {
+  margin-bottom: 5px;
+}
+
+.meus-cursos h5, .meus-cursos p, .recomendados h5, .recomendados p {
+  margin: 0;
+}
+
+.meus-cursos h5, .recomendados h5 {
+  color: #32d6ce;
+  font-weight: 600;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .conteudo-admin {
+    margin-top: 260px;
+    padding-left: 30px;
+  }
+  .conteudo-admin textarea {
+    width: 400px;
+  }
+  .menu-lateral {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .bar {
+    width: 50%;
+ }
+ .cursos img, .cursos h5 {
+   width: 60%;
+ }
+
+ .meus-cursos {
+   width: 80%;
+ }
+ .upload-button {
+   width: 180px;
+ }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .menu-lateral {
+    border-right: solid 1px #e67e22;
+  }
+  .curso {
+    height: 230px;
+  }
+  .cursos {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+
+  .miniatura-curso {
+    height: 180px;
+  }
+  .bar {
+    width: 35%;
+ }
+ .cursos img, .cursos h5 {
+   width: 200px;
+ }
+ .texto-top {
+   margin-top: 40px;
+ }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wise Tutors | O que você quer aprender hoje?</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header-height">
+      <%- include('navbar'); %>
+      
+
+      <div class="hero-text">
+        <h2>O que você quer aprender hoje?</h2>
+        <div class="hero-sub"><p>Nossa comunidade reune milhares de cursos sobre os mais diversos temas</p></div>
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+          <input type="text" class="form-control" placeholder="Busque por tema, professor ou curso">
+        </div><!-- /input-group -->
+      </div>
+
+      <div class="bg-image">
+        <img src="img/pagina-inicial/bg.png" alt="imagem de fundo">
+      </div>
+
+    </header>
+    <div class="container">
+      <section class="principal" id="tabs">
+        <div class="categorias">
+          <h3>Pesquise por Categorias</h3>
+          <div class="show-mobile">
+            <select>
+              <option value="Todas">Todas</option>
+              <option value="Design">Design</option>
+              <option value="Fotografia">Fotografia</option>
+              <option value="Arte">Arte</option>
+              <option value="Filme">Filme</option>
+              <option value="Tecnologia">Tecnologia</option>
+              <option value="Moda">Moda</option>
+              <option value="Música">Música</option>
+              <option value="Culinária">Culinária</option>
+              <option value="Escrita">Escrita</option>
+              <option value="Lifestyle">Lifestyle</option>
+              <option value="Jogos">Jogos</option>
+              <option value="Negócios">Negócios</option>
+            </select>
+          </div>
+          <div class="show-desktop">
+            <ul class="lista-categorias">
+              <li><a href="#tabs-1">Todas</a></li>
+              <li><a href="#tabs-2">Design</a></li>
+              <li><a href="#tabs-3">Fotografia</a></li>
+              <li><a href="#tabs-4">Arte</a></li>
+              <li><a href="#tabs-5">Filme</a></li>
+              <li><a href="#tabs-6">Tecnologia</a></li>
+              <li><a href="#tabs-7">Moda</a></li>
+              <li><a href="#tabs-8">Música</a></li>
+              <li><a href="#tabs-9">Culinária</a></li>
+              <li><a href="#tabs-10">Escrita</a></li>
+              <li><a href="#tabs-11">Lifestyle</a></li>
+              <li><a href="#tabs-12">Jogos</a></li>
+              <li><a href="#tabs-13">Negócios</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cursos row" id="tabs-1">
+          <div class="col-sm-4 curso">
+            <a href="#" data-toggle="modal" data-target="#myModal"><img src="img/fake/fontes-retro.jpg" alt="fontes-retro"></a>
+            <div>
+              <a href="#" data-toggle="modal" data-target="#myModal"><h5>Criando fontes estilo Retro</h5></a>
+              <p>João Ferreira</p>
+              <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+              <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+            </div>
+          </div>
+          <div class="col-sm-4 curso">
+            <img src="img/fake/projetos-premie.jpg" alt="projetos-premie">
+            <h5>Criando apresentações e projetos no premie</h5>
+            <p>João Ferreira</p>
+            <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+            <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+          </div>
+          <div class="col-sm-4 curso">
+            <img src="img/fake/projetos-premie.jpg" alt="projetos-premie">
+            <h5>Criando fontes estilo Retro</h5>
+            <p>João Ferreira</p>
+            <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+            <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+          </div>
+          <div class="col-sm-4 curso">
+            <img src="img/fake/projetos-premie.jpg" alt="projetos-premie">
+            <h5>Criando fontes estilo Retro</h5>
+            <p>João Ferreira</p>
+            <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+            <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+          </div>
+          <div class="col-sm-4 curso">
+            <img src="img/fake/projetos-premie.jpg" alt="projetos-premie">
+            <h5>Criando fontes estilo Retro</h5>
+            <p>João Ferreira</p>
+            <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+            <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+          </div>
+          <div class="col-sm-4 curso">
+            <img src="img/fake/projetos-premie.jpg" alt="projetos-premie">
+            <h5>Criando fontes estilo Retro</h5>
+            <p>João Ferreira</p>
+            <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+            <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+          </div>
+        </div>
+        <div id="tabs-2">Outra tab</div>
+      </section>
+    </div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <h2>Criando fontes estilo Retro</h2>
+          <div class="row">
+            <div class="col-sm-8">
+              <img src="img/fake/fontes-retro.jpg" alt="fontes-retro" class="video-img">
+              <div class="info">
+                <span>João Ferreira</span>
+                <div class="estatisticas">
+                  <i class="fa fa-eye" aria-hidden="true"></i> 432
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="unidade">
+                <span class="titulo"><b>Unidade 1</b></span>
+                <div class="aulas">
+                  <div class="aula"><i class="fa fa-check checked" aria-hidden="true"></i>1 - Introdução - 2:50</div>
+                  <div class="aula">2 - Sobre Logos - 6:50</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="guias">
+            <ul class="lista-categorias">
+              <li><a href="#guia-comentarios">Comentários</a></li>
+              <li><a href="#guia-sobre">Sobre o Curso</a></li>
+              <li><a href="#guia-trabalhos">Trabalhos</a></li>
+              <li><a href="#">Compartilhar</a></li>
+            </ul>
+            <div id="guia-comentarios" class="row">
+              <div class="col-sm-8">
+                <div class="comentario">
+                  <div class="usuario">
+                    Paulo Ricardo
+                  </div>
+                  <div class="texto">
+                    Muito Bacana o curso. O professor tem ótima didática
+                  </div>
+                </div>
+                <div class="comentario">
+                  <div class="usuario">
+                    Pedro
+                  </div>
+                  <div class="texto">
+                    Comentar
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="guia-sobre" class="row">
+              <div class="col-sm-8">
+                <div class="topico">
+                  <b>Descrição:</b> Neste curso vou lhe ensinar a criar letras...
+                </div>
+                <div class="topico">
+                  <b>Para quem é voltado este curso:</b> O curso é voltado para pessoas que já possue experiência com...
+                </div>
+                <div class="topico">
+                  <b>Nivel:</b> Intermediário
+                </div>
+                <div class="topico">
+                  <b>Possui certificado:</b> Sim
+                </div>
+              </div>
+            </div>
+
+            <div id="guia-trabalhos">
+              <img src="img/fake/projetos-premie.jpg" alt="projetos premie">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <footer>
+      <div style="height: 300px;">
+
+      </div>
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function() {
+        $("#tabs").tabs();
+      } );
+      $(function() {
+        $("#guias").tabs();
+      } );
+    </script>
+  </body>
+</html>

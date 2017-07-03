@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Painel | Wise Tutors</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/black-header.css">
+    <link rel="stylesheet" href="css/painel.css">
+  </head>
+  <body>
+    <header>
+      <%- include('black-navbar'); %>
+
+    </header>
+    <div class="container">
+      <section>
+        <div class="row" id="tabs">
+          <div class="col-sm-3">
+            <div class="text-center">
+              <div class="nome">Rodrigo Lima</div>
+              <div class="inline seguindo">
+                <h3>15</h3>
+                <div>Seguindo</div>
+              </div>
+              <div class="inline seguidores">
+                <h3>16</h3>
+                <div>Seguidores</div>
+              </div>
+            </div>
+            <div class="menu-lateral">
+              <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#portfolio">Portifólio</a></li>
+                <li><a href="#cursos-em-andamento">Cursos em andamento</a></li>
+                <li><a href="#meus-cursos">Meus Cursos</a></li>
+                <li><a href="#recomendados">Recomendados</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-9 conteudo-admin">
+
+<!--********************************************************************
+*******************************PERFIL**********************************
+********************************************************************-->
+
+            <div id="perfil">
+              <form action="#">
+                <div class="box-formulario">
+                  <label for="nome-aluno">Nome</label>
+                  <input type="text" id="nome-aluno" placeholder="Rodrigo Lima">
+                </div>
+                <div class="box-formulario">
+                  <label for="foto-aluno">Foto</label>
+                </div>
+                <div class="box-formulario">
+                  <label for="senha-aluno">Senha</label>
+                  <input type="password" id="senha-aluno" placeholder="*******">
+                </div>
+                <div class="box-formulario">
+                  <label for="biografia-aluno" class="align-top">Biografia</label>
+                  <textarea id="biografia-aluno" name="descricao" rows="8" placeholder="Deixe as pessoas conhecerem você"></textarea>
+                </div>
+                <div class="box-formulario">
+                  <label for="email-aluno">Email</label>
+                  <input type="text" id="email-aluno" placeholder="exemplo@exemplo.com">
+                </div>
+                <div class="box-formulario">
+                  <label for="telefone-aluno">Telefone</label>
+                  <input type="text" id="telefone-aluno" placeholder="55 00/9999-9999">
+                </div>
+                <div class="box-formulario">
+                  <label for="endereco-aluno">Endereço</label>
+                  <input type="text" id="endereco-aluno" placeholder="Do que você gosta?">
+                </div>
+                <div class="box-formulario">
+                  <label for="curriculo-aluno">Currículo</label>
+                  <input type="text" id="curriculo-aluno" placeholder="Fale sobre suas experiências">
+                </div>
+              </form>
+            </div>
+
+            <!--********************************************************************
+            *******************************PORTFÓLIO********************************
+            ********************************************************************-->
+
+            <div id="portfolio">
+              <div class="col-sm-4">
+                <a href="#">
+                  <div class="curso-portfolio">
+                    <img src="img/fake/fontes-retro.jpg" alt="fontes-retro">
+                    <div class="icons">
+                      <i class="fa fa-heart" aria-hidden="true"></i> 15 <i class="fa fa-comment" aria-hidden="true"></i> 1
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4"></div>
+            </div>
+
+            <!--********************************************************************
+            *******************************CURSOS EM ANDAMENTO**********************
+            ********************************************************************-->
+
+            <div id="cursos-em-andamento" class="cursos">
+              <div class="curso row">
+                <div class="miniatura-curso col-md-4">
+                  <a href="#"><img src="img/fake/fontes-retro.jpg" alt="fontes-retro"></a>
+                  <div>
+                    <a href="#"><h5>Criando fontes estilo Retro</h5></a>
+                    <p>João Ferreira</p>
+                    <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+                    <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+                  </div>
+                </div>
+                <div class="col-sm-8 col-md-6 bar">
+                  <div id="myBar-1" class="text-center">27%</div>
+                  <div class="progress-bar">
+                    <div id="myProgress-1" class="text-center"></div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-2 text-center certificado">
+                  <img src="Icones/certificate.png" alt="certificado">
+                </div>
+              </div>
+              <div class="curso row">
+                <div class="miniatura-curso col-md-4">
+                  <a href="#"><img src="img/fake/fontes-retro.jpg" alt="fontes-retro"></a>
+                  <div>
+                    <a href="#"><h5>Criando fontes estilo Retro</h5></a>
+                    <p>João Ferreira</p>
+                    <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+                    <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+                  </div>
+                </div>
+                <div class="col-sm-8 col-md-6 bar">
+                  <div id="myBar-1" class="text-center">100%</div>
+                  <div class="progress-bar">
+                    <div id="myProgress-2" class="text-center"></div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-2 text-center certificado">
+                  <img src="img/Icones/certificate.png" alt="certificado" class="ativo">
+                </div>
+              </div>
+            </div>
+
+            <!--********************************************************************
+            *******************************MEUS CURSOS******************************
+            ********************************************************************-->
+
+
+          <div id="meus-cursos">
+            <div class="meus-cursos">
+              <div class="enviar-curso">
+                <div class="upload-area">
+                  <a href="#"><div class="upload-button">
+                    Enviar Curso
+                  </div></a>
+                </div>
+              </div>
+              <div class="row meu-curso">
+                <div>
+                  <div class="col-md-6">
+                    <div class="button-editar">
+                      Editar
+                    </div>
+                    <a href="#"><img src="img/fake/fontes-retro.jpg" alt="fontes-retro"></a>
+                    <div>
+                      <a href="#"><h5>Criando fontes estilo Retro</h5></a>
+                      <p>João Ferreira</p>
+                      <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+                      <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <div class="texto-top">
+                      Comissão
+                    </div>
+                    <div class="comissao">
+                      R$ 100,00
+                    </div>
+                    <div class="sacar-button">
+                      Sacar
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="notificar-button">
+                      Notificar alunos
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--********************************************************************
+          *******************************RECOMENDADOS*****************************
+          ********************************************************************-->
+
+
+          <div id="recomendados">
+            <div class="row recomendados">
+              <div class="col-sm-4">
+                <a href="#"><img src="img/fake/fontes-retro.jpg" alt="fontes-retro"></a>
+                <div>
+                  <a href="#"><h5>Criando fontes estilo Retro</h5></a>
+                  <p>João Ferreira</p>
+                  <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+                  <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <a href="#"><img src="img/fake/fontes-retro.jpg" alt="fontes-retro"></a>
+                <div>
+                  <a href="#"><h5>Criando fontes estilo Retro</h5></a>
+                  <p>João Ferreira</p>
+                  <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+                  <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <a href="#"><img src="img/fake/fontes-retro.jpg" alt="fontes-retro"></a>
+                <div>
+                  <a href="#"><h5>Criando fontes estilo Retro</h5></a>
+                  <p>João Ferreira</p>
+                  <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
+                  <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer style="height: 200px;"></footer>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#tabs" ).tabs({
+        activate: function(event, ui) {
+          window.scrollTo(0,0);
+          window.location.hash = ui.tab.hash;
+        }
+      });
+    } );
+
+    function move() {
+      var elem = document.getElementById("myBar-1");
+      var width = 10;
+      var id = setInterval(frame, 10);
+      function frame() {
+          if (width >= 100) {
+              clearInterval(id);
+          } else {
+              width++;
+              elem.style.width = width + '%';
+              elem.innerHTML = width * 1 + '%';
+          }
+      }
+    }
+    </script>
+
+  </body>
+</html>
