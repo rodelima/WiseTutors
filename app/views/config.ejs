@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Painel | Wise Tutors</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo/favicon.png"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/black-header.css">
+    <link rel="stylesheet" href="css/config.css">
+  </head>
+  <body>
+    <header>
+      <%- include('black-navbar'); %>
+    </header>
+    <div class="row wrap section" id="tabs-config">
+      <div class="col-sm-3">
+        <ul class="menu-lateral">
+          <a href="/painel">Editar Perfil</a>
+          <li class="menu-lateral--active"><a href="#conta">Conta</a></li>
+          <li><a href="#pagamentos">Pagamentos</a></li>
+          <li><a href="#premium">Premium</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <div id="conta">
+          <form action="#">
+            <div class="box-formulario">
+              <label class="label--form-config" for="nome-aluno">Nome</label>
+              <input class="input--block input--border-orange input--border-radius-small input--padding-small input--large-width" type="text" id="nome-aluno">
+            </div>
+            <div class="box-formulario">
+              <label class="label--form-config" for="nome-aluno">Email</label>
+              <input class="input--block input--border-orange input--border-radius-small input--padding-small input--large-width" type="text" id="nome-aluno">
+            </div>
+            <div class="box-formulario">
+              <label class="label--form-config" for="nome-aluno">Cidade</label>
+              <input class="input--block input--border-orange input--border-radius-small input--padding-small input--large-width" type="text" id="nome-aluno">
+            </div>
+            <div class="box-formulario">
+              <label class="label--form-config" for="nome-aluno">Cep</label>
+              <input class="input--block input--border-orange input--border-radius-small input--padding-small input--large-width" type="text" id="nome-aluno">
+            </div>
+            <br>
+            <div class="box-formulario">
+              <label class="label--form-config" for="nome-aluno">Alterar Senha</label>
+              <input class="input--block input--border-orange input--border-radius-small input--padding-small input--vertical-margin" type="password" id="nome-aluno" placeholder="Digite sua senha atual">
+              <input class="input--block input--border-orange input--border-radius-small input--padding-small" type="password" id="nome-aluno" placeholder="Digite sua nova senha">
+            </div>
+            <br>
+            <div class="box-formulario--square-radio">
+              <label class="label--form-config" for="nome-aluno">Gênero</label><br>
+              <input type="radio" name="gender" value="male"> Feminino
+              <input type="radio" name="gender" value="female" checked> Masculino
+              <input type="radio" name="gender" value="other"> Outro
+            </div>
+            <br>
+            <div class="box-formulario--square-radio">
+              <input type="radio" name="receber-emails" checked> Desejo receber emails e atualizações<br>
+              <u>Desativar conta</u>
+            </div>
+          </form>
+        </div>
+        <div id="pagamentos">
+          <div class="gray-square text-center">
+            <img src="img/config/logo-pagseguro.png" alt="Pagseguro" class="pagseguro-image">
+
+          </div>
+        </div>
+        <div id="premium"></div>
+      </div>
+    </div>
+    <footer></footer>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript">
+    $( function() {
+      $( "#tabs-config" ).tabs({
+        activate: function(event, ui) {
+          window.scrollTo(0,0);
+        }
+      });
+    } );
+    </script>
+</body>
+</html>

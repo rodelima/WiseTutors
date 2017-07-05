@@ -1,7 +1,6 @@
 .orange-box {
   border: orange solid 2px;
   border-top: none;
-  width: 75%;
   margin: auto;
   padding-top: 40px;
   margin-top: 40px;
@@ -23,6 +22,10 @@
   font-size: 28px;
 }
 
+.titulo-margin-top {
+  margin-top: 80px;
+}
+
 .preco {
   margin-top: 50px;
   font-weight: 400;
@@ -31,8 +34,8 @@
 
 .descricao {
   font-size: 18px;
-  margin-bottom: 80px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn-gray {
@@ -70,26 +73,40 @@
   font-weight: 200;
 }
 
-.super-margin {
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
 .porque-premium {
   margin-top: 80px;
   margin-bottom: 50px;
   font-weight: 400;
 }
-.duvidas-frequentes {
-  margin-top: 80px;
-}
 .duvidas-frequentes p {
   font-size: 20px;
-  margin-left: 150px;
   font-weight: 300;
   color: gray;
 }
 .duvidas-frequentes b {
   color: #555555;
   font-weight: 500;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .orange-box {
+    width: 75%;
+  }
+  .titulo-margin-top {
+    margin-top: 0;
+  }
+  .descricao {
+    margin-bottom: 80px;
+  }
+  .super-margin {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .duvidas-frequentes {
+    margin-top: 80px;
+  }
+  .duvidas-frequentes {
+    margin-left: 150px;
+  }
 }

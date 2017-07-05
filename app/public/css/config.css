@@ -1,0 +1,89 @@
+.wrap {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* SECTION */
+
+.section {
+  padding-top: 140px;
+}
+
+/**  MENU LATERAL **/
+
+.menu-lateral {
+  font-size: 18px;
+  border-right: solid #e67e22 1px;
+  padding-bottom: 180px;
+}
+
+.menu-lateral li {
+  list-style-type: none;
+}
+
+.menu-lateral a {
+  color: black
+}
+
+.menu-lateral .ui-state-active >a {
+  color: #e67e22;
+}
+
+
+/* LABEL */
+
+.label--form-config {
+  color: gray;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+/** INPUT **/
+
+.input--block {
+  display: block;
+}
+
+.input--border-orange {
+  border: solid 2px #e67e22;
+}
+
+.input--border-radius-small {
+  border-radius: 5px;
+}
+
+.input--padding-small {
+  padding: 5px;
+}
+
+.input--large-width {
+  width: 250px;
+}
+
+.input--vertical-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box-formulario--square-radio input[type="radio"] {
+  -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+  -moz-appearance: checkbox;    /* Firefox */
+  -ms-appearance: checkbox;     /* not currently supported */
+}
+
+/** PAGAMENTOS **/
+
+.gray-square {
+  background-color: #e7e7e7;
+  height: 300px;
+  width: 100%;
+  margin: auto;
+}
+
+.pagseguro-image {
+  margin-top: 20px;
+  width: 80%;
+  border: dashed 2px #e67e22;
+}
