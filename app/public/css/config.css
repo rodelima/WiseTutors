@@ -6,7 +6,7 @@
 /* SECTION */
 
 .section {
-  padding-top: 140px;
+  padding-top: 40px;
 }
 
 /**  MENU LATERAL **/
@@ -14,7 +14,6 @@
 .menu-lateral {
   font-size: 18px;
   border-right: solid #e67e22 1px;
-  padding-bottom: 180px;
 }
 
 .menu-lateral li {
@@ -77,13 +76,35 @@
 
 .gray-square {
   background-color: #e7e7e7;
-  height: 300px;
   width: 100%;
   margin: auto;
+  padding: 20px;
+}
+
+.gray-square--big {
+  height: 300px;
 }
 
 .pagseguro-image {
-  margin-top: 20px;
   width: 80%;
   border: dashed 2px #e67e22;
+}
+
+/** PREMIUM TAB **/
+
+.premium-tab p {
+  font-size: 16px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .section {
+    padding-top: 140px;
+  }
+
+  .menu-lateral {
+    padding-bottom: 180px;
+  }
+
 }

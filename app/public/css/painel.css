@@ -1,9 +1,21 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
+.aluno-img {
+  margin-top: 50px;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.aluno-img--perfil-tab {
+  border-radius: 50%;
+  max-width: 100px;
+  margin-left: 10px;
+}
+
 .nome {
   font-size: 26px;
-  margin-top: 250px;
+  margin-top: 25px;
   color: gray;
   font-weight: 300;
 }
@@ -50,7 +62,6 @@
 .conteudo-admin label {
   font-size: 18px;
   font-weight: 400;
-  text-align: right;
   width: 100px;
   color: gray;
 }
@@ -230,6 +241,9 @@
   .conteudo-admin {
     margin-top: 260px;
     padding-left: 30px;
+  }
+  .conteudo-admin label {
+    text-align: right;
   }
   .conteudo-admin textarea {
     width: 400px;
