@@ -36,46 +36,30 @@
       <section class="principal" id="tabs">
         <div class="categorias">
           <h3>Pesquise por Categorias</h3>
-          <div class="show-mobile">
-            <select>
-              <option value="Todas">Todas</option>
-              <option value="Design">Design</option>
-              <option value="Fotografia">Fotografia</option>
-              <option value="Arte">Arte</option>
-              <option value="Filme">Filme</option>
-              <option value="Tecnologia">Tecnologia</option>
-              <option value="Moda">Moda</option>
-              <option value="Música">Música</option>
-              <option value="Culinária">Culinária</option>
-              <option value="Escrita">Escrita</option>
-              <option value="Lifestyle">Lifestyle</option>
-              <option value="Jogos">Jogos</option>
-              <option value="Negócios">Negócios</option>
-            </select>
-          </div>
-          <div class="show-desktop">
+          <button type="button" class="show-mobile btn btn-warning btn-block collapsed category-button" data-toggle="collapse" data-target="#navbar-collapse-2" aria-expanded="false">Escolha uma categoria <span class="caret"></span></button>
+          <div class="collapse navbar-collapse" id="navbar-collapse-2">
             <ul class="lista-categorias">
-              <li><a href="#tabs-1">Todas</a></li>
-              <li><a href="#tabs-2">Design</a></li>
-              <li><a href="#tabs-3">Fotografia</a></li>
-              <li><a href="#tabs-4">Arte</a></li>
-              <li><a href="#tabs-5">Filme</a></li>
-              <li><a href="#tabs-6">Tecnologia</a></li>
-              <li><a href="#tabs-7">Moda</a></li>
-              <li><a href="#tabs-8">Música</a></li>
-              <li><a href="#tabs-9">Culinária</a></li>
-              <li><a href="#tabs-10">Escrita</a></li>
-              <li><a href="#tabs-11">Lifestyle</a></li>
-              <li><a href="#tabs-12">Jogos</a></li>
-              <li><a href="#tabs-13">Negócios</a></li>
+              <li><a href="#tabs-1" data-toggle="collapse" data-target="#navbar-collapse-2">Todas</a></li>
+              <li><a href="#tabs-2" data-toggle="collapse" data-target="#navbar-collapse-2">Design</a></li>
+              <li><a href="#tabs-3" data-toggle="collapse" data-target="#navbar-collapse-2">Fotografia</a></li>
+              <li><a href="#tabs-4" data-toggle="collapse" data-target="#navbar-collapse-2">Arte</a></li>
+              <li><a href="#tabs-5" data-toggle="collapse" data-target="#navbar-collapse-2">Filme</a></li>
+              <li><a href="#tabs-6" data-toggle="collapse" data-target="#navbar-collapse-2">Tecnologia</a></li>
+              <li><a href="#tabs-7" data-toggle="collapse" data-target="#navbar-collapse-2">Moda</a></li>
+              <li><a href="#tabs-8" data-toggle="collapse" data-target="#navbar-collapse-2">Música</a></li>
+              <li><a href="#tabs-9" data-toggle="collapse" data-target="#navbar-collapse-2">Culinária</a></li>
+              <li><a href="#tabs-10" data-toggle="collapse" data-target="#navbar-collapse-2">Escrita</a></li>
+              <li><a href="#tabs-11" data-toggle="collapse" data-target="#navbar-collapse-2">Lifestyle</a></li>
+              <li><a href="#tabs-12" data-toggle="collapse" data-target="#navbar-collapse-2">Jogos</a></li>
+              <li><a href="#tabs-13" data-toggle="collapse" data-target="#navbar-collapse-2">Negócios</a></li>
             </ul>
           </div>
         </div>
         <div class="cursos row" id="tabs-1">
           <div class="col-sm-4 curso">
-            <a href="#" data-toggle="modal" data-target="#myModal"><img src="img/fake/fontes-retro.jpg" alt="fontes-retro"></a>
+            <a href="#" data-toggle="modal" data-target="#curso-modal"><img src="img/fake/fontes-retro.jpg" alt="fontes-retro"></a>
             <div>
-              <a href="#" data-toggle="modal" data-target="#myModal"><h5>Criando fontes estilo Retro</h5></a>
+              <a href="#" data-toggle="modal" data-target="#curso-modal"><h5>Criando fontes estilo Retro</h5></a>
               <p><img src="img/users/user-1001-small.jpg" alt="foto do instrutor" class="instrutor-img">João Ferreira</p>
               <span class="font-small"><i class="fa fa-eye" aria-hidden="true"></i> 432 </span>
               <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
@@ -117,12 +101,24 @@
             <span class="font-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 92%</span>
           </div>
         </div>
-        <div id="tabs-2">Outra tab</div>
+        <div id="tabs-2">Aqui ficarão mais cursos</div>
+        <div id="tabs-3">Aqui ficarão mais cursos</div>
+        <div id="tabs-4">Aqui ficarão mais cursos</div>
+        <div id="tabs-5">Aqui ficarão mais cursos</div>
+        <div id="tabs-6">Aqui ficarão mais cursos</div>
+        <div id="tabs-7">Aqui ficarão mais cursos</div>
+        <div id="tabs-8">Aqui ficarão mais cursos</div>
+        <div id="tabs-9">Aqui ficarão mais cursos</div>
+        <div id="tabs-10">Aqui ficarão mais cursos</div>
+        <div id="tabs-11">Aqui ficarão mais cursos</div>
+        <div id="tabs-12">Aqui ficarão mais cursos</div>
+        <div id="tabs-13">Aqui ficarão mais cursos</div>
       </section>
     </div>
 
     <!-- Modal -->
     <%- include('curso-modal'); %>
+    <%- include('login-modal'); %>
 
 
     <footer>

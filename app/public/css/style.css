@@ -20,6 +20,7 @@ button:focus {
     outline: none;
 }
 
+
 /* GENERAL */
 
 .inline {
@@ -89,6 +90,26 @@ button:focus {
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
   color: white;
   background-color: #e67e22;
+}
+
+.news {
+  padding: 10px 15px 0px 15px;
+  width: 300px;
+  font-size: 10px;
+  color: white;
+}
+
+.news hr {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .navbar-right .news {
+      left: -250%;
+  }
+  .news {
+    color: black;
+  }
 }
 
 .premium-button a {
@@ -210,6 +231,34 @@ BODY
   display: none;
 }
 
+.category-button {
+  float: none;
+}
+
+.lista-categorias .ui-state-active>a {
+  color: red;
+  font-weight: 600;
+}
+.lista-categorias {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+.lista-categorias li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.lista-categorias li>a {
+  color: #95a5a6;
+  font-size: 16px;
+}
+.lista-categorias li:hover>a {
+  color: red;
+  text-decoration: none;
+}
+.lista-categorias li:checked>a, .lista-categorias li:active>a, .lista-categorias li:default >a {
+  text-decoration: none;
+}
 /****** CURSOS ******/
 
 .cursos {
@@ -259,7 +308,7 @@ BODY
 }
 
 /******************************
-MODAL
+CURSO MODAL
  ******************************/
 
  /****** TOPO ******/
@@ -358,6 +407,11 @@ MODAL
   margin-bottom: 10px;
 }
 
+/******************************
+LOGIN MODAL
+ ******************************/
+
+
 /*************************************************************************************/
 
 /* Small devices (tablets, 768px and up) */
@@ -408,7 +462,7 @@ MODAL
   }
 
   .principal {
-    width: 90%;
+    width: 91%;
     margin: auto;
   }
   .lista-categorias {
@@ -424,27 +478,15 @@ MODAL
     border-bottom: solid rgba(170, 170, 170, 0.4) 1px;
     margin-bottom: 5px;
   }
-
+  .lista-categorias li>a {
+    font-size: 14px;
+  }
   .lista-categorias li:hover {
     border-bottom: solid red 2px;
   }
 
   .lista-categorias .ui-state-active {
     border-bottom: solid red 2px;
-  }
-  .lista-categorias .ui-state-active>a {
-    color: red;
-    font-weight: 600;
-  }
-  .lista-categorias li>a {
-    color: #95a5a6;
-  }
-  .lista-categorias li:hover>a {
-    color: red;
-    text-decoration: none;
-  }
-  .lista-categorias li:checked>a, .lista-categorias li:active>a, .lista-categorias li:default >a {
-    text-decoration: none;
   }
   .lista-categorias {
     width: 85%;
@@ -462,8 +504,10 @@ MODAL
   }
 
   /****** MODAL ******/
-
-  .modal-dialog {
+  .modal-dialog--small-modal {
+    width: 350px;
+  }
+  .modal-dialog--big-modal {
     width: 750px;
   }
   .modal-dialog .video-img {
@@ -496,9 +540,7 @@ MODAL
 @media (min-width: 992px) {
 
   /****** CATEGORIAS ******/
-  .principal{
-    width: 86%;
-  }
+
   .lista-categorias {
     width: 100%;
   }
